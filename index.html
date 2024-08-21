@@ -22,7 +22,8 @@
           theme: {
             extend: {
               colors: {
-                bg_color: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+                bg_color: 'linear-gradient(0.00deg, rgb(254, 254, 254),rgba(255, 255, 255, 0) 100%)',
+                bg_second:'rgb(244,244,244)',
                 main_color:'rgb(171, 239, 95)',
                 secondary_color:'rgba(171, 239, 95, 0.5)',
                 text_color_head: 'rgb(33, 33, 33)',
@@ -83,7 +84,7 @@
 
                   <div class="dropdown">
                     <div tabindex="0" role="button" class=" ml-2 lg:hidden">
-                        <i class="fa-solid fa-bars-staggered text-xl bg-[##FFFFFF] border rounded-full h-10 w-10 justify-center items-center flex text-text_color_third"></i>
+                        <i class="fa-solid fa-bars-staggered text-lg bg-[##FFFFFF] border rounded-full h-10 w-10 justify-center items-center flex text-text_color_third"></i>
                     </div>
                     <ul
                       tabindex="0"
@@ -100,14 +101,14 @@
         </nav>
 
         <!-- hero section start -->
-        <div class=" flex flex-col items-center justify-center px-4 md:px-24 pb-12  md:pb-24">
+        <div class=" flex flex-col items-center justify-center px-4 md:px-12 pb-12 md:pb-24">
           <!-- hero image -->
           <div>
             <img src="./images/banner.png" alt="Home Image">
           </div>
           <!-- hero contenet -->
           <div class="flex items-center flex-col justify-center mt-6 text-center">
-            <h1 class=" text-2xl md:text-4xl lg:text-6xl lg:w- font-black leading-tight mb-6">A barn house of this design  has a striking appearance</h1>
+            <h1 class=" text-2xl md:text-4xl lg:text-6xl lg:w-10/12 font-black leading-tight mb-6">A barn house of this design  has a striking appearance</h1>
             <p class="mb-8 lg:w-4/6 text-text_color_para font-medium text-xs md:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             <a href="#" class=" rounded-full bg-secondary_color w-full md:w-auto flex justify-center py-3 px-5 gap-2 items-center">
               <span class=" lg:text-lg text-base font-extrabold text-btn_color">View Details</span> 
@@ -121,8 +122,131 @@
     <!-- header section end -->
 
     <!-- main section start -->
-    <main>
+    <main class="bg-bg_second ">
+      <div class="container mx-auto px-4">
 
+        <!-- about section start -->
+      <section class="" id="service ">
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 py-12 lg:py-24">
+          <!-- about content -->
+           <div class="space-y-4 lg:space-y-6 flex-1 relative text-center lg:text-left">
+            <div class="absolute -top-10 -left-10 hidden lg:block">
+              <img src="./images/Vector.png" >
+            </div>
+            <div href="#" class=" btn rounded-full bg-white ">
+              <span class=" rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-arrow-right-long text-btn_color"></i>
+              </span>
+              <span class=" lg:text-lg text-sm font-extrabold text-btn_color">About Us</span> 
+          </div>
+             <h3 class="text-center lg:text-left text-2xl lg:text-5xl font-extrabold">We design thoughtful, liveable spaces</h3>
+             <p class="text-center lg:text-left lg:w-5/6 text-text_color_para font-medium text-xs md:text-base">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+              <!-- grid cards -->
+               <div class="flex flex-col md:flex-row lg:flex-col gap-6">
+                <!-- card-1  -->
+                <div class="flex items-center space-x-4 shadow-md bg-white rounded-xl p-4 lg:p-6 text-left ">
+                  <div class="image"><img src="./images/commercial.png" alt="commercial building logo"></div>
+                  <div class="space-y-3">
+                    <h4 class="text-base lg:text-xl font-bold">Commercial</h4>
+                    <p class="text_color_third text-xs lg:text-sm"> The barn house captivates with its blend of rustic <br> charm and modern.</p>
+                  </div>
+                </div> 
+                <!-- card-2  -->
+                <div class="flex items-center space-x-4 shadow-md bg-white rounded-xl p-4 lg:p-6 text-left">
+                  <div class="image"><img src="./images/residential.png" alt="residential building logo"></div>
+                  <div class="space-y-3">
+                    <h4 class="text-base lg:text-xl font-bold">Residential</h4>
+                    <p class="text_color_third text-xs lg:text-sm"> The barn house captivates with its blend of rustic <br> charm and modern.</p>
+                  </div>
+                </div> 
+               </div>
+           </div>
+           <!-- about image -->
+            <div class="flex-1 w-full">
+              <img class="w-full" src="./images/Rectangle.png" alt="house image">
+            </div>
+        </div>
+      </section>
+
+      <!-- data section start-->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white rounded-xl gap-12 py-12">
+        <!-- card 1 -->
+        <div class="text-center space-y-3 text-text_color_third">
+          <i class="fa-regular fa-message text-3xl"></i>
+          <h5 class="text-5xl font-extrabold text-text_color_para">235+</h5>
+          <p class="text-base">Happy Client Review</p>
+        </div>
+        <!-- card 2 -->
+        <div class="text-center space-y-3 text-text_color_third">
+          <i class="fa-regular fa-building text-3xl"></i>
+          <h5 class="text-5xl font-extrabold text-text_color_para">50+</h5>
+          <p class="text-base">Work Depertments</p>
+        </div>
+        <!-- card 3 -->
+        <div class="text-center space-y-3 text-text_color_third">
+          <i class="fa-solid fa-users text-3xl"></i>
+          <h5 class="text-5xl font-extrabold text-text_color_para">30k+</h5>
+          <p class="text-base">Our Happy Client</p>
+        </div>
+        <!-- card 4 -->
+        <div class="text-center space-y-3 text-text_color_third">
+          <i class="fa-solid fa-user-group text-3xl"></i>
+          <h5 class="text-5xl font-extrabold text-text_color_para">307+</h5>
+          <p class="text-base">Staff Members</p>
+        </div>
+      </section>
+
+      <!-- work process section start -->
+      <section class=" py-12 lg:py-24">
+        <!-- content -->
+        <div class="flex flex-col justify-center items-center space-y-4 md:space-y-6">
+          <a href="#" class=" btn rounded-full bg-white ">
+            <span class=" rounded-full flex items-center justify-center">
+              <i class="fa-solid fa-arrow-right-long text-btn_color"></i>
+            </span>
+            <span class=" lg:text-lg text-sm font-extrabold text-btn_color">How we works</span> 
+        </a>
+           <h3 class="text-center  text-2xl lg:text-5xl font-extrabold">Our Works Process</h3>
+           <p class="text-center  lg:w-3/6 text-text_color_para font-medium text-xs md:text-base">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- grid cards section -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-6">
+          <!-- process card 1 -->
+           <div class="text-left bg-card_color_1 rounded-xl p-8 space-y-2 md:space-y-3">
+            <img src="./images/concept.png" alt="concept img">
+              <h6 class="text-xl font-extrabold text-btn_color">Concept</h6>
+              <p class="text-text_color_para">The barn house captivates with its blend of rustic charm and modern.</p>
+           </div>
+          <!-- process card 2 -->
+           <div class="text-left bg-card_color_2 rounded-xl p-8 space-y-2 md:space-y-3">
+            <img src="./images/flow-chart.png" alt="flow-chart img">
+              <h6 class="text-xl font-extrabold text-btn_color">Design Process</h6>
+              <p class="text-text_color_para">The barn house captivates with its blend of rustic charm and modern.</p>
+           </div>
+          <!-- process card 3 -->
+           <div class="text-left bg-card_color_3 rounded-xl p-8 space-y-2 md:space-y-3">
+            <img src="./images/vision.png" alt="vision img">
+              <h6 class="text-xl font-extrabold text-btn_color">Supervision</h6>
+              <p class="text-text_color_para">The barn house captivates with its blend of rustic charm and modern.</p>
+           </div>
+          <!-- process card 4 -->
+           <div class="text-left bg-card_color_4 rounded-xl p-8 space-y-2 md:space-y-3">
+            <img src="./images/budget-planning.png" alt="budget-planning img">
+              <h6 class="text-xl font-extrabold text-btn_color">Budget Planning</h6>
+              <p class="text-text_color_para">The barn house captivates with its blend of rustic charm and modern.</p>
+           </div>
+
+
+         </div>
+      </section>
+      
+
+
+
+      </div>
     </main>
     <!-- main section end -->
 
