@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- css link -->
+    <link rel="stylesheet" href="./style/style.css">
+
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +28,7 @@
                 bg_color: 'linear-gradient(0.00deg, rgb(254, 254, 254),rgba(255, 255, 255, 0) 100%)',
                 bg_second:'rgb(244,244,244)',
                 main_color:'rgb(171, 239, 95)',
-                secondary_color:'rgba(171, 239, 95, 0.5)',
+                secondary_color:'rgba(171, 239, 95, 0.2)',
                 text_color_head: 'rgb(33, 33, 33)',
                 text_color_para: 'rgb(73, 73, 73)',
                 text_color_third: 'rgb(115, 115, 115)',
@@ -266,14 +269,14 @@
               <div class="grid grid-cols-10 gap-5 mt-12 items-center">
 
                 <!-- card-1 --> 
-                <div class="flex flex-col md:flex-row items-center col-span-10 lg:col-span-7 border rounded-xl p-3 md:p-5 md:space-x-5">
-                  <div class="h-60">
+                <div class="flex flex-col md:flex-row md:items-center col-span-10 lg:col-span-7 border rounded-xl p-3 md:p-5 md:space-x-5">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img1.png" alt="building design">
                   </div>
-                  <div class="space-y-3 mt-4 md:mt-0">
+                  <div class="space-y-3 mt-4 md:mt-0 ">
                     <h4 class="text-base lg:text-xl font-bold">Commercial</h4>
                     <p class="text_color_third text-xs lg:text-sm"> The barn house captivates with its blend of rustic <br> charm and modern.</p>
-                    <a href="#" class="  flex py-3 gap-2 items-center">
+                    <a href="#" class=" flex py-3 gap-2 items-center">
                       <span class=" lg:text-lg text-base font-extrabold text-btn_color">View Details</span> 
                       <span class="bg-main_color h-6 w-6 lg:h-8 lg:w-8 rounded-full flex items-center justify-center">
                           <i class="fa-solid fa-arrow-right-long text-btn_color -rotate-45"></i>
@@ -283,19 +286,19 @@
                 </div>
                 <!-- card-2 --> 
                 <div class=" col-span-10 md:col-span-5 lg:col-span-3 border rounded-xl p-3 md:p-5">
-                  <div class="h-60">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img2.png" alt="building design">
                   </div>
                 </div>
                 <!-- card-3 --> 
                 <div class=" col-span-10 md:col-span-5 lg:col-span-2 border rounded-xl p-3 md:p-5">
-                  <div class="h-60">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img3.png" alt="building design">
                   </div>
                 </div>
                 <!-- card-4 --> 
-                <div class="flex flex-col md:flex-row items-center col-span-10 lg:col-span-6 border rounded-xl p-3 md:p-5 md:space-x-5">
-                  <div class="h-60">
+                <div class="flex flex-col md:flex-row md:items-center col-span-10 lg:col-span-6 border rounded-xl p-3 md:p-5 md:space-x-5">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img4.png" alt="building design">
                   </div>
                   <div class="space-y-3 mt-4 md:mt-0">
@@ -311,13 +314,13 @@
                 </div>
                 <!-- card-5 --> 
                 <div class=" col-span-10 md:col-span-5 lg:col-span-2 border rounded-xl p-3 md:p-5">
-                  <div class="h-60">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img5.png" alt="building design">
                   </div>
                 </div>
                 <!-- card-6 --> 
                 <div class=" col-span-10 md:col-span-5 lg:hidden border rounded-xl p-3 md:p-5">
-                  <div class="h-60">
+                  <div class="h-60 w-full md:w-auto">
                     <img class="w-full h-full" src="./images/img3.png" alt="building design">
                   </div>
                 </div>
@@ -434,23 +437,64 @@
 
 
   </div>
-</section>
+      </section>
+
     </main>
     <!-- articals and news main section start -->
 
+    <!-- contact section start here -->
+    <main class="bg-img">
+      <section class="container mx-auto px-4 py-12 lg:py-24">
+         <!-- heading text -->
+         <div class="flex flex-col justify-center items-center space-y-4 md:space-y-6 ">
+          <a href="#" class=" btn rounded-full bg-secondary_color ">
+              <span class=" rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-arrow-right-long text-btn_color"></i>
+              </span>
+              <span class=" lg:text-lg text-sm font-extrabold text-btn_color">Let’s Connect</span> 
+          </a>
+            <h3 class="text-center  text-2xl lg:text-5xl font-extrabold">Let’s Discuss Next Project</h3>
+            <p class="text-center  lg:w-3/5 text-text_color_para font-medium text-xs md:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <!-- form section start --> 
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 mt-12 lg:px-40">
+          <div class="col-span-2 md:col-span-1">
+            <input type="text" placeholder="First Name* " class="input input-bordered rounded-full w-full"/>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <input type="text" placeholder="Last Name*" class="input input-bordered rounded-full w-full"/>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <input type="number" placeholder="Phone Number* " class="input input-bordered rounded-full w-full"/>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <input type="email" placeholder="Email Number*" class="input input-bordered rounded-full w-full"/>
+          </div>
+          <div class="col-span-2">
+            <textarea class="rounded-2xl w-full h-80 p-5" placeholder="Write your message here"></textarea>
+          </div>
+          <div class="col-span-2">
+            <a href="#" class="btn rounded-full bg-main_color w-full">
+              <span class=" lg:text-lg text-base font-extrabold text-btn_color">Send Mail</span> 
+              <span class="bg-btn_color h-6 w-6 lg:h-8 lg:w-8 rounded-full flex items-center justify-center">
+                  <i class="fa-solid fa-arrow-right-long text-white -rotate-45"></i> 
+              </span>
+          </a>
+          </div>
+
+        </form>
 
 
-    <!-- main section end -->
 
-
-
-
+      </section>
+    </main>
+    <!-- contact section End here -->
+ 
     <!-- footer section start -->
     <footer>
     </footer>
     <!-- footer section end -->
-
-
 
 </body>
 </html>
